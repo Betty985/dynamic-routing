@@ -41,6 +41,7 @@ const routes = [
   { path: "/dialog", component: () => import("./../view/dialogTest.vue") },
   { path: "/message", component: () => import("./../view/messageTest.vue") },
   { path: "/toolTip", component: () => import("./../view/toolTipTest.vue") },
+  { path: "/smoke", component: () => import("./../view/smokeTest.vue") },
   { path: "/", redirect: "/button" },
 ] as any;
 const router = createRouter({
