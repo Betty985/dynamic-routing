@@ -21,7 +21,7 @@ const props = defineProps({
     type: Object,
     default: {
       open: false,
-      time: 100,
+      time: 10,
     },
   },
   top: Boolean,
@@ -33,11 +33,13 @@ const deBounceFn = debounce(() => {
   emit("click", "向父组件传值");
 }, myref.isdebounce.time);
 
-function myTop() {
+function myTop(e) {
   if (myref.top) top(1);
   else {
     if (myref.isdebounce.open) {
       deBounceFn();
+    } else {
+      emit("click", e);
     }
   }
 }

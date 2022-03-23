@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.31/vue.global.prod.js"></script>
+    <style>
+      .box {
+        width: 500px;
+        height: 0px;
+        padding-bottom: 500px;
+        background-color: #000;
+      }
+      /* 过渡动画 */
+      /* 帧动画 */
+      @keyframes fade {
+        0% {
+          padding-bottom: 0;
+        }
+        50% {
+          padding-bottom: 250px;
+        }
+        100% {
+          padding-bottom: 500px;
+        }
+      }
+      .box {
+        animation: fade 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="box=!box">open</button>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <transition tag="div" name="fade">
+          <div v-show="box" class="box"></div>
+        </transition>
+      </div>
+    </div>
+    <script>
+      const { ref } = Vue;
+      const app = Vue.createApp({
+        setup() {
+          let hi = "hello world";
+          let box = ref(false);
+          return { hi, box };
+        },
+      });
+      app.mount("#app");
+    </script>
+  </body>
+</html>

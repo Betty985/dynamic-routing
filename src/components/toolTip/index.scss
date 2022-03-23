@@ -1,0 +1,9 @@
+@import "@p/color.scss";
+span {
+  max-width: 60px;
+}
+span::after {
+  content: " ";
+  border: 20px solid;
+  border-color: transparent transparent transparent $text;
+}

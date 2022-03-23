@@ -26,6 +26,9 @@ import myBtn from "@/components/button/index.vue";
       ></router-link
     >
     <router-link to="/card"> <my-btn round>卡片</my-btn></router-link>
+    <router-link to="/dialog"> <my-btn round>对话框</my-btn></router-link>
+    <router-link to="/message"> <my-btn round>消息</my-btn></router-link>
+    <router-link to="/toolTip"> <my-btn round>提示框</my-btn></router-link>
   </nav>
 </template>
 

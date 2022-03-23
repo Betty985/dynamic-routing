@@ -38,6 +38,9 @@ const routes = [
   { path: "/table", component: tableTest },
   { path: "/divider", component: DividerTest },
   { path: "/card", component: () => import("./../view/cardTest.vue") },
+  { path: "/dialog", component: () => import("./../view/dialogTest.vue") },
+  { path: "/message", component: () => import("./../view/messageTest.vue") },
+  { path: "/toolTip", component: () => import("./../view/toolTipTest.vue") },
   { path: "/", redirect: "/button" },
 ] as any;
 const router = createRouter({

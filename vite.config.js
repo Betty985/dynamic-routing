@@ -10,6 +10,7 @@ const alias = {
   "@": pathResolve("src"),
   "@c": pathResolve("src/components"),
   "@v": pathResolve("src/view"),
+  "@p": pathResolve("public"),
 };
 // https://vitejs.dev/config/
 export default defineConfig({

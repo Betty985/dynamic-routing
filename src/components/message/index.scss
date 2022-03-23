@@ -1,0 +1,27 @@
+@import "./../../../public/color.scss";
+.item {
+  margin-right: 10px;
+  background-color: $default;
+  transition: all 0.3s;
+  padding: 0 15px;
+  width: 380px;
+  height: 56px;
+  color: $text;
+  line-height: 56px;
+  min-width: 200px;
+}
+.round {
+  border-radius: 0.8rem;
+}
+.success {
+  background-color: $success;
+}
+.info {
+  background-color: $info;
+}
+.danger {
+  background-color: $danger;
+}
+.warning {
+  background-color: $warning;
+}
