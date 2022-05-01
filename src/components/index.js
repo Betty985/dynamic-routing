@@ -1,8 +1,8 @@
 import toolTip from "./toolTip";
 import smoke from "./smoke";
-import typewriter from "./typewriter";
+import sweepstake from "./sweepstake";
 export default {
   install(app) {
-    app.use(toolTip).use(smoke).user(typewriter);
+    app.use(toolTip).use(smoke).use(sweepstake);
   },
 };

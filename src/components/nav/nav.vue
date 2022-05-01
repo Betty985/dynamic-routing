@@ -39,6 +39,7 @@ let hi = ref(false);
     <router-link to="/message"> <my-btn round>消息</my-btn></router-link>
     <router-link to="/toolTip"> <my-btn round>提示框</my-btn></router-link>
     <router-link to="/smoke"> <my-btn round>烟雾</my-btn></router-link>
+    <router-link to="/sweepstake"> <my-btn round>抽奖</my-btn></router-link>
   </nav>
 </template>
 

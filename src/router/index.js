@@ -3,7 +3,7 @@ import {
   createRouter,
   createWebHashHistory,
 } from "vue-router";
-import { routeConvert } from "./../utils/route";
+import { routeConvert } from "../utils/route";
 import ButtonTest from "@/view/buttonTest.vue";
 import InputTest from "@v/inputTest.vue";
 import SwitchTest from "@v/SwitchTest.vue";
@@ -42,8 +42,12 @@ const routes = [
   { path: "/message", component: () => import("./../view/messageTest.vue") },
   { path: "/toolTip", component: () => import("./../view/toolTipTest.vue") },
   { path: "/smoke", component: () => import("./../view/smokeTest.vue") },
+  {
+    path: "/sweepstake",
+    component: () => import("./../view/sweepstakeTest.vue"),
+  },
   { path: "/", redirect: "/button" },
-] as any;
+];
 const router = createRouter({
   history: createWebHistory(),
   routes,
